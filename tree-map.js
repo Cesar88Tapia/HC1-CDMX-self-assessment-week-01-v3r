@@ -35,3 +35,15 @@ MDN
   *  newTree.children[1].children[1].value // 14
   *  root1.value // still 1
   */
+//create constructor function
+var Tree = function(data){
+//create empty object
+var bornTree = {};
+//assign value
+bornTree.data = data;
+//create empty array
+
+//return object
+};
+//create object outside of constructor function
+//
