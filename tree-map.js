@@ -37,13 +37,22 @@ MDN
   */
 //create constructor function
 var Tree = function(data){
-//create empty object
-var bornTree = {};
-//assign value
-bornTree.data = data;
-//create empty array
-
-//return object
+  //create empty object
+  var bornTree = {};
+  //assign value
+  bornTree.data = data;
+  //create empty array
+  bornTree.children = [];
+  //extend to outside object
+  _.extend(bornTree, treeMethods);
+  //return object
+  return bornTree;
 };
 //create object outside of constructor function
+var treeMethods = {};
+//create function to add child
+treeMethods.addChild = function(data){
+//add value into object insde of contructor function
+bornTree.push(data);
 //
+};
